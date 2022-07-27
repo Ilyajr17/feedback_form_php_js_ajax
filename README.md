@@ -1,1 +1,1 @@
-# feedback_form_php_js_ajax
+# форма обратной связи с использованием технологий - Bootstrap, JavaScript, Ajax и PHP
