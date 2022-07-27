@@ -35,8 +35,12 @@ $('#sendMail').on('click', function () {
             $('#sendMail').prop('disabled', true);
         },
         success: function (data) {
-            alert(data);
-            $('#sendMail').prop('disabled', true);
+            if (!data)
+                alert('Были ошибки, письмо не отправлено');
+            else
+                $('#mailForm').trigger('reset');
+
+            $('#sendMail').prop('disabled', false);
         }
     });
 
